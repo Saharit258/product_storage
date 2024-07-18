@@ -22,7 +22,7 @@ ChartJS.register(
 interface PurchaseData {
   date: string;
   items: number;
-  amount: number;
+  price: number;
 }
 
 interface BarChartProps {
@@ -34,13 +34,8 @@ const BarChart: React.FC<BarChartProps> = ({ data }) => {
     labels: data.map((entry) => entry.date),
     datasets: [
       {
-        label: "Items",
-        data: data.map((entry) => entry.items),
-        backgroundColor: "rgba(75, 192, 192, 0.6)",
-      },
-      {
-        label: "Amount ($)",
-        data: data.map((entry) => entry.amount),
+        label: "ราคา (บาท)",
+        data: data.map((entry) => entry.price),
         backgroundColor: "rgba(153, 102, 255, 0.6)",
       },
     ],
@@ -54,7 +49,7 @@ const BarChart: React.FC<BarChartProps> = ({ data }) => {
       },
       title: {
         display: true,
-        text: "Purchase Data",
+        text: "จำนวนเงินในแต่ละวัน",
       },
     },
   };
