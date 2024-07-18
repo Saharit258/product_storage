@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import App from './App.tsx'
-import Home from './page/Home.tsx'
+import Dashboard from './page/Dashboard.tsx'
 import Calculate from './page/Calculate.tsx'
 
 import './index.css'
@@ -14,8 +14,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/home",
-    element: <Home />,
+    path: "/dashboard",
+    element: <Dashboard />,
   },
   {
     path: "/calculate",

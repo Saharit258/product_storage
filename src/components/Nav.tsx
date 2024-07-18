@@ -11,7 +11,7 @@ function Nav() {
     return (
         <nav className="bg-blue-500 p-4">
             <div className="flex items-center justify-between">
-                <div className="text-white text-2xl font-bold">ReactTailwind</div>
+                <div className="text-white text-2xl font-bold">Calculate</div>
 
                 {/* Toggle Menu Button */}
                 <div className="md:hidden">
@@ -32,8 +32,8 @@ function Nav() {
 
                 <ul className="hidden md:flex space-x-4">
                     <li>
-                        <Link to="/" className="text-white">
-                            Home
+                        <Link to="/dashboard" className="text-white">
+                            Dashboard
                         </Link>
                     </li>
                     <li>
