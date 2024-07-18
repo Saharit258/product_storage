@@ -11,7 +11,7 @@ function Nav() {
     return (
         <nav className="bg-blue-500 p-4">
             <div className="flex items-center justify-between">
-                <div className="text-white text-2xl font-bold">Calculate</div>
+                <div className="text-white text-2xl font-bold">รายการสั่งซื้อสินค้า</div>
 
                 {/* Toggle Menu Button */}
                 <div className="md:hidden">
@@ -33,12 +33,12 @@ function Nav() {
                 <ul className="hidden md:flex space-x-4">
                     <li>
                         <Link to="/dashboard" className="text-white">
-                            Dashboard
+                            ตารางแสดผล
                         </Link>
                     </li>
                     <li>
                         <Link to="/calculate" className="text-white">
-                            Calculate
+                            รายการสินค้า
                         </Link>
                     </li>
                     <li>
