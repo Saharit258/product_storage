@@ -19,14 +19,14 @@ ChartJS.register(
   Legend
 );
 
-interface PurchaseData {
+interface AggregatedData {
   date: string;
-  items: number;
-  price: number;
+  totalQuantity: number;
+  totalPrice: number;
 }
 
 interface BarChartProps {
-  data: PurchaseData[];
+  data: AggregatedData[];
 }
 
 const BarChart: React.FC<BarChartProps> = ({ data }) => {
@@ -34,8 +34,8 @@ const BarChart: React.FC<BarChartProps> = ({ data }) => {
     labels: data.map((entry) => entry.date),
     datasets: [
       {
-        label: "ราคา (บาท)",
-        data: data.map((entry) => entry.price),
+        label: "จำนวนเงิน (บาท)",
+        data: data.map((entry) => entry.totalPrice),
         backgroundColor: "rgba(153, 102, 255, 0.6)",
       },
     ],

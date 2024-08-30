@@ -33,7 +33,7 @@ function Nav() {
                 <ul className="hidden md:flex space-x-4">
                     <li>
                         <Link to="/dashboard" className="text-white">
-                            ตารางแสดผล
+                            ตารางแสดง
                         </Link>
                     </li>
                     <li>
